@@ -23,7 +23,7 @@ To style how the thumbnail appears on your page, you may pass optional CSS class
 2. Activate Ordered Thumbnails through the "Plugins" menu in WordPress.
 3. Place `<?php ordered_thumbnails(); ?>` in your templates within the WordPress post loop.
 
-The plugin takes two optional parameters:
+**The plugin takes two optional parameters:**
 
 The basic `<?php ordered_thumbnails(); ?>` defaults to `<?php ordered_thumbnails( 'true', '' ); ?>`. Change the 1st parameter to "false" if you want the plugin to return the thumbnail data as an array, rather than display an `<img>` for the thumbnail. The 2nd parameter accepts CSS class names you would like to assign to the thumbnail `<img>` (only used if param. 1 is "true"). All options will return "false" if no image is attached to the post.
 
