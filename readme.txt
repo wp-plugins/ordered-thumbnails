@@ -26,7 +26,7 @@ To style how the thumbnail appears on your page, you may pass optional CSS class
 
 The plugin takes two optional parameters:
 
-`<?php ordered_thumbnails(); ?>` defaults to `<?php ordered_thumbnails( 'true', '' ); ?>`. Change the 1st parameter to "false" if you want the plugin to return the thumbnail data as an array, rather than display an `<img>` for the thumbnail. The 2nd parameter accepts CSS class names you would like to assign to the thumbnail `<img>` (only used if param. 1 is "true"). All options will return "false" if no image is attached to the post.
+The basic `<?php ordered_thumbnails(); ?>` defaults to `<?php ordered_thumbnails( 'true', '' ); ?>`. Change the 1st parameter to "false" if you want the plugin to return the thumbnail data as an array, rather than display an `<img>` for the thumbnail. The 2nd parameter accepts CSS class names you would like to assign to the thumbnail `<img>` (only used if param. 1 is "true"). All options will return "false" if no image is attached to the post.
 
 For posts with more than one image attached, you can pick which thumbnail you want to use by ordering the image in the post's gallery. While editing a post, click the "Add an image" button and then click the "Gallery" tab in the lightbox. Re-order your images by dragging the image thumbnail you want to appear for the post to the top of the order. You may also change the order number to "1". Click "Save all changes". See the Screenshots for a visual guide on how to do this. Note that this will NOT reorder images in the actual post.
 
