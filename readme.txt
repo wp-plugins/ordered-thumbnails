@@ -1,6 +1,5 @@
 === Ordered Thumbnails ===
 Contributors: smekosh
-Donate link: http://mekosh.org/projects/ordered-thumbnails
 Tags: attachments, images, thumbnails, gallery
 Requires at least: 2.5
 Tested up to: 2.8
