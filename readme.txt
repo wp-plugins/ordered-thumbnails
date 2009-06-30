@@ -1,6 +1,7 @@
 === Ordered Thumbnails ===
 Contributors: smekosh
-Tags: attachments, images, thumbnails, gallery
+Donate link: http://mekosh.org/projects/ordered-thumbnails
+Tags: attachments, images, thumbnail, gallery
 Requires at least: 2.5
 Tested up to: 2.8
 Stable tag: 1.0
@@ -23,9 +24,9 @@ To style how the thumbnail appears on your page, you may pass optional CSS class
 2. Activate Ordered Thumbnails through the "Plugins" menu in WordPress.
 3. Place `<?php ordered_thumbnails(); ?>` in your templates within the WordPress post loop.
 
-**The plugin takes two optional parameters:**
+The plugin takes two optional parameters:
 
-The basic `<?php ordered_thumbnails(); ?>` defaults to `<?php ordered_thumbnails( 'true', '' ); ?>`. Change the 1st parameter to "false" if you want the plugin to return the thumbnail data as an array, rather than display an `<img>` for the thumbnail. The 2nd parameter accepts CSS class names you would like to assign to the thumbnail `<img>` (only used if param. 1 is "true"). All options will return "false" if no image is attached to the post.
+`<?php ordered_thumbnails(); ?>` defaults to `<?php ordered_thumbnails( 'true', '' ); ?>`. Change the 1st parameter to "false" if you want the plugin to return the thumbnail data as an array, rather than display an `<img>` for the thumbnail. The 2nd parameter accepts CSS class names you would like to assign to the thumbnail `<img>` (only used if param. 1 is "true"). All options will return "false" if no image is attached to the post.
 
 For posts with more than one image attached, you can pick which thumbnail you want to use by ordering the image in the post's gallery. While editing a post, click the "Add an image" button and then click the "Gallery" tab in the lightbox. Re-order your images by dragging the image thumbnail you want to appear for the post to the top of the order. You may also change the order number to "1". Click "Save all changes". See the Screenshots for a visual guide on how to do this. Note that this will NOT reorder images in the actual post.
 
@@ -46,6 +47,10 @@ Short answer: no. This plugin relies on the way images are attached to a particu
 = Some of my images are just image links, some are uploaded through WordPress. Will this plugin break on my site? =
 
 No, but the plugin will only show thumbnails for images uploaded through WordPress. For posts with no WordPress uploaded images, no thumbnail will appear.
+
+= How does Ordered Thumbnails work? =
+
+This plugin works by first looking for any attachments in the wp_posts database table that have a "post_parent" ID that matches the current post and as a second step for posts with multiple image attachments, returning the attachment with its "menu_order" field set to "1". If no image attachments match the current post ID, the plugin returns "false".
 
 
 
