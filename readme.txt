@@ -50,7 +50,7 @@ No, but the plugin will only show thumbnails for images uploaded through WordPre
 
 = How does Ordered Thumbnails work? =
 
-This plugin works by first looking for any attachments in the wp_posts database table that have a "post_parent" ID that matches the current post and as a second step for posts with multiple image attachments, returning the attachment with its "menu_order" field set to "1". If no image attachments match the current post ID, the plugin returns "false".
+This plugin works by first looking for any attachments in the wp_posts database table that have a `post_parent` ID that matches the current post and as a second step for posts with multiple image attachments, returning the attachment with its `menu_order` field set to "1". If no image attachments match the current post ID, the plugin returns "false".
 
 
 
