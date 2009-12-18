@@ -3,7 +3,7 @@ Contributors: smekosh
 Donate link: http://mekosh.org/projects/ordered-thumbnails
 Tags: attachments, images, thumbnail, gallery
 Requires at least: 2.5
-Tested up to: 2.8
+Tested up to: 2.9
 Stable tag: 1.0
 
 Display a thumbnail based on post images with no additional uploads. For multiple image posts, thumbnail respects Gallery sort order.
